@@ -20,6 +20,8 @@ public class Keybinds {
     // remeber to use jni to link to libflextrace so we can profile ourselves
 
     public static void register() {
+        keybinds = new KeyBinding[5];
+
         // register ts keybinds
         keybinds[0] = crouchSlideKey;
         keybinds[1] = reloadKey;
