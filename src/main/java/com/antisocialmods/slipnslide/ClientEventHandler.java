@@ -1,4 +1,4 @@
-package com.myname.mymodid;
+package com.antisocialmods.slipnslide;
 
 import cpw.mods.fml.common.eventhandler.EventPriority;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
@@ -25,19 +25,19 @@ public class ClientEventHandler {
                 System.out.println(key);
 
                 switch (key.getKeyDescription()) {
-                    case "key.mymod.crouchslide":
+                    case "key.slipnslide.crouchslide":
                         System.out.println("this is crouch slide");
                         break;
-                    case "key.mymod.reload":
+                    case "key.slipnslide.reload":
                         System.out.println("this is reload");
                         break;
-                    case "key.mymod.weaponmode":
+                    case "key.slipnslide.weaponmode":
                         System.out.println("this is weaponmode");
                         break;
-                    case "key.mymod.dolphindive":
+                    case "key.slipnslide.dolphindive":
                         System.out.println("this is dolphindive");
                         break;
-                    case "key.mymod.changesight":
+                    case "key.slipnslide.changesight":
                         System.out.println("this is change sight");
                         break;
 

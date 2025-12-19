@@ -1,6 +1,5 @@
-package com.myname.mymodid;
+package com.antisocialmods.slipnslide;
 
-import cpw.mods.fml.common.FMLCommonHandler;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -17,7 +16,7 @@ public class MyMod {
     public static final String MODID = "mymodid";
     public static final Logger LOG = LogManager.getLogger(MODID);
 
-    @SidedProxy(clientSide = "com.myname.mymodid.ClientProxy", serverSide = "com.myname.mymodid.CommonProxy")
+    @SidedProxy(clientSide = "com.antisocialmods.slipnslide.ClientProxy", serverSide = "com.antisocialmods.slipnslide.CommonProxy")
     public static CommonProxy proxy;
 
     @Mod.EventHandler

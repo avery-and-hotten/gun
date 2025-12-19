@@ -1,4 +1,4 @@
-package com.myname.mymodid;
+package com.antisocialmods.slipnslide;
 
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
