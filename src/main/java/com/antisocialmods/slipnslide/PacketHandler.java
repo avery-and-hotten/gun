@@ -1,19 +1,27 @@
 package com.antisocialmods.slipnslide;
 
 import cpw.mods.fml.common.network.NetworkRegistry;
+import cpw.mods.fml.common.network.simpleimpl.IMessage;
+import cpw.mods.fml.common.network.simpleimpl.IMessageHandler;
+import cpw.mods.fml.common.network.simpleimpl.SimpleNetworkWrapper;
 import net.minecraft.util.ResourceLocation;
 
-public class PacketHandler {
+public abstract class PacketHandler implements IMessageHandler<SlipNMessage, IMessage> {
     private static final String PROTOCOL_VERSION = "1";
 
-    public static final SimpleChannel CHANNEL = NetworkRegistry.newSimpleChannel(
+    public static final SimpleNetworkWrapper CHANNEL = NetworkRegistry.CHANNEL.newSimpleChannel(
         new ResourceLocation("slipnslide", "movement"),
         () -> PROTOCOL_VERSION
     );
 
-    public static void handle(MyMessage msg, Supplier<NetworkEvent.Context> ctx) {
-        ctx.get().enqueueWork(() -> {
+    @Override
+    public IMessage onMessage(SlipNMessage msg, )
 
-        });
+    public void send() {
+
+    }
+
+    public void recv() {
+
     }
 }
